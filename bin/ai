@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+
+echo 'Ask anything to AI' . PHP_EOL;
+
+while (true) {
+    $input = readline ('> ');
+    if ($input === 'Hola' || $input === 'hola' || $input === 'Hi' || $input === 'hi') {
+        echo 'Hola, ¿en qué puedo ayudarte?' . PHP_EOL;
+        continue;
+    }
+       if ($input == 'exit') {
+        break;
+    }
+echo 'Thinking...' . PHP_EOL;
+
+sleep(2);
+
+echo 'AI: ' . $input . PHP_EOL;
+
+}
