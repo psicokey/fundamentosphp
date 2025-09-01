@@ -1,11 +1,14 @@
 <?php
-require 'Course.php';
+require __DIR__ . '/vendor/autoload.php';
+use App\Course;
+use App\CourseType;
 
 $course = new Course(
     title: 'Curso de PHP',
     subtitle: 'Aprende PHP desde cero',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
-    tags: ['php', 'programación', 'backend']
+    tags: ['php', 'programación', 'backend'],
+    type: CourseType::PAID,
 );
 ?>
 
